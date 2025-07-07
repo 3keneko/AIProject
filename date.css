@@ -21,6 +21,12 @@ html, body {
   z-index: 1;
 }
 
+.parents{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .icons {
   margin-top: 3vh;
   user-select: none;
@@ -38,7 +44,8 @@ html, body {
 }
 
 .icons > svg:nth-child(1) { fill: #fb4f68; margin-right: 2vh; }
-.icons > svg:nth-child(2) { fill: #4dca93; }
+.icons > svg:nth-child(2) { fill: #4dca93; margin-right: 2vh; }
+.icons > svg:nth-child(3) { fill: #A020F9; }
 .icons > svg > path:nth-child(1) { fill: #fff; }
 
 .card {
@@ -82,13 +89,13 @@ html, body {
 }
 
 .card .like::after {
-  content: "YUMM";
+  content: "LIKE";
   color: #4dca93;
   border: 0.1em solid #4dca93;
 }
 
 .card .nope::after {
-  content: "YUCK";
+  content: "DISLIKE";
   color: #fb4f68;
   border: 0.1em solid #fb4f68;
 }
